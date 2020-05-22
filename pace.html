@@ -698,7 +698,7 @@
            
            var res = result;
 
-           $('.ajax-contentped').html('<hr>Ajax Request Completed Pedidos!' + result['id']);
+           $('.ajax-contentped').html('<hr>Ajax Request Completed Pedidos!' + result);
            
            console.log('resposta: ' , result);
         
@@ -712,7 +712,7 @@
 
            $('.ajax-contentprod').html('<hr>Ajax Request Completed Produto!' + result);
            
-           console.log('resposta: ' + res['nome']);
+           console.log('resposta: ' + result);
         
         }});
     });
@@ -722,9 +722,9 @@
            
            var res = result;
 
-           $('.ajax-contentcat').html('<hr>Ajax Request Completed categoria todas!' + res['nome']);
+           $('.ajax-contentcat').html('<hr>Ajax Request Completed categoria todas!' + result);
            
-           console.log('resposta: ' + res['nome']);
+           console.log('resposta: ' + result);
         
         }});
     });
@@ -734,9 +734,9 @@
            
            var res = result;
 
-           $('.ajax-contentcatpai').html('<hr>Ajax Request Completed categoria pai!' + res['nome']);
+           $('.ajax-contentcatpai').html('<hr>Ajax Request Completed categoria pai!' + result);
            
-           console.log('resposta: ' + res['nome']);
+           console.log('resposta: ' + result);
         
         }});
     });
@@ -746,9 +746,9 @@
            
            var res = result;
 
-           $('.ajax-contentusu').html('<hr>Ajax Request Completed Usuario !' + res['nome']);
+           $('.ajax-contentusu').html('<hr>Ajax Request Completed Usuario !' + result);
            
-           console.log('resposta: ' + res['nome']);
+           console.log('resposta: ' + result);
         
         }});
     });
