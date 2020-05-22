@@ -680,11 +680,13 @@
 	// To make Pace works on Ajax calls
 	$(document).ajaxStart(function() { Pace.restart(); });
     $('.ajax').click(function(){
-        $.ajax({url: 'https://sushisenpai.herokuapp.com/pedidovenda/', success: function(result){
+        $.ajax({url: 'https://cors-anywhere.herokuapp.com/https://sushisenpai.herokuapp.com/pedidovenda/', success: function(result){
            
            var res = result;
 
            $('.ajax-content').html('<hr>Ajax Request Completed !' + res);
+           
+           console.log('resposta: ' + res);
         
         }});
     });
