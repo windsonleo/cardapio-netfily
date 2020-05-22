@@ -434,8 +434,19 @@
           </button>
           </div>
           </div>
-            <div class="ajax-content">
+            <div class="ajax-contentped">
             </div>
+            
+                        <div class="ajax-contentprod">
+            </div>
+            
+                        <div class="ajax-contentcat">
+            </div>
+            
+                        <div class="ajax-contentcatpai">
+            </div>
+            
+            
         </div>
         <!-- /.box-body -->
         <div class="box-footer">
@@ -684,7 +695,7 @@
            
            var res = result;
 
-           $('.ajax-content').html('<hr>Ajax Request Completed Pedidos!' + res['id']);
+           $('.ajax-contentped').html('<hr>Ajax Request Completed Pedidos!' + res['id']);
            
            console.log('resposta: ' + res['id']);
         
@@ -696,7 +707,7 @@
            
            var res = result;
 
-           $('.ajax-content').html('<hr>Ajax Request Completed Produto!' + res['nome']);
+           $('.ajax-contentprod').html('<hr>Ajax Request Completed Produto!' + res['nome']);
            
            console.log('resposta: ' + res['nome']);
         
@@ -708,7 +719,7 @@
            
            var res = result;
 
-           $('.ajax-content').html('<hr>Ajax Request Completed categoria todas!' + res['nome']);
+           $('.ajax-contentcat').html('<hr>Ajax Request Completed categoria todas!' + res['nome']);
            
            console.log('resposta: ' + res['nome']);
         
@@ -720,7 +731,7 @@
            
            var res = result;
 
-           $('.ajax-content').html('<hr>Ajax Request Completed categoria pai!' + res['nome']);
+           $('.ajax-contentcatpai').html('<hr>Ajax Request Completed categoria pai!' + res['nome']);
            
            console.log('resposta: ' + res['nome']);
         
