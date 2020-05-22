@@ -698,9 +698,9 @@
            
            var res = result;
 
-           $('.ajax-contentped').html('<hr>Ajax Request Completed Pedidos!' + result.size());
+           $('.ajax-contentped').html('<hr>Ajax Request Completed Pedidos!' + result.id);
            
-           console.log('resposta: ' , result);
+           console.log('resposta: ' + result);
         
         }});
     });
@@ -710,7 +710,7 @@
            
            var res = result;
 
-           $('.ajax-contentprod').html('<hr>Ajax Request Completed Produto!' + result.size());
+           $('.ajax-contentprod').html('<hr>Ajax Request Completed Produto!' + result.nome);
            
            console.log('resposta: ' + result);
         
