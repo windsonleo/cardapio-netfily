@@ -684,9 +684,45 @@
            
            var res = result;
 
-           $('.ajax-content').html('<hr>Ajax Request Completed !' + res);
+           $('.ajax-content').html('<hr>Ajax Request Completed Pedidos!' + res['id']);
            
-           console.log('resposta: ' + res);
+           console.log('resposta: ' + res['id'];);
+        
+        }});
+    });
+    
+        $('.ajax').click(function(){
+        $.ajax({url: 'https://cors-anywhere.herokuapp.com/https://sushisenpai.herokuapp.com/produto/all', success: function(result){
+           
+           var res = result;
+
+           $('.ajax-content').html('<hr>Ajax Request Completed Produto!' + res['nome']);
+           
+           console.log('resposta: ' + res['nome'];);
+        
+        }});
+    });
+    
+            $('.ajax').click(function(){
+        $.ajax({url: 'https://cors-anywhere.herokuapp.com/https://sushisenpai.herokuapp.com/categoria/all', success: function(result){
+           
+           var res = result;
+
+           $('.ajax-content').html('<hr>Ajax Request Completed categoria todas!' + res['nome']);
+           
+           console.log('resposta: ' + res['nome'];);
+        
+        }});
+    });
+    
+                $('.ajax').click(function(){
+        $.ajax({url: 'https://cors-anywhere.herokuapp.com/https://sushisenpai.herokuapp.com/categoria/pai', success: function(result){
+           
+           var res = result;
+
+           $('.ajax-content').html('<hr>Ajax Request Completed categoria pai!' + res['nome']);
+           
+           console.log('resposta: ' + res['nome'];);
         
         }});
     });
