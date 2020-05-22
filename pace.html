@@ -446,6 +446,9 @@
                         <div class="ajax-contentcatpai">
             </div>
             
+                                <div class="ajax-contentusu">
+            </div>
+            
             
         </div>
         <!-- /.box-body -->
@@ -695,9 +698,9 @@
            
            var res = result;
 
-           $('.ajax-contentped').html('<hr>Ajax Request Completed Pedidos!' + res['id']);
+           $('.ajax-contentped').html('<hr>Ajax Request Completed Pedidos!' + result['id']);
            
-           console.log('resposta: ' + res['id']);
+           console.log('resposta: ' , result['id']);
         
         }});
     });
@@ -707,7 +710,7 @@
            
            var res = result;
 
-           $('.ajax-contentprod').html('<hr>Ajax Request Completed Produto!' , result['nome']);
+           $('.ajax-contentprod').html('<hr>Ajax Request Completed Produto!' , res['nome']);
            
            console.log('resposta: ' + res['nome']);
         
@@ -732,6 +735,18 @@
            var res = result;
 
            $('.ajax-contentcatpai').html('<hr>Ajax Request Completed categoria pai!' + res['nome']);
+           
+           console.log('resposta: ' + res['nome']);
+        
+        }});
+    });
+    
+                    $('.ajax').click(function(){
+        $.ajax({url: 'https://cors-anywhere.herokuapp.com/https://sushisenpai.herokuapp.com/usuario/all', success: function(result){
+           
+           var res = result;
+
+           $('.ajax-contentusu').html('<hr>Ajax Request Completed Usuario !' + res['nome']);
            
            console.log('resposta: ' + res['nome']);
         
